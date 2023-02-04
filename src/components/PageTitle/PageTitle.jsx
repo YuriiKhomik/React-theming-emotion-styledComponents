@@ -1,4 +1,4 @@
-import PropTypes from "prop-types"
+import {PropTypes} from "prop-types"
 import css from "./PageTitle.module.css";
 
 export const PageTitle = ({ text }) => {
@@ -8,3 +8,4 @@ export const PageTitle = ({ text }) => {
 PageTitle.propTypes = {
     text: PropTypes.string.isRequired
 }
+

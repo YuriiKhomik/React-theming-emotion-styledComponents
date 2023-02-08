@@ -1,16 +1,16 @@
-import styled from '@emotion/styled';
-// import styled from 'styled-components';
+// import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const Card = styled.div`
   position: relative;
-  border: ${props => `2px dashed ${props.theme.colors.black}`};
-  padding: 8px;
+  border: ${p => `2px dashed ${p.theme.colors.primary}`};
+  padding: ${p => p.theme.space[3]}px;
   border-radius: 4px;
 `;
 
 export const EventName = styled.h2`
   margin-top: 0;
-  font-size: 14px;
+  font-size: ${p => p.theme.fontSizes.s}px;
   line-height: 24px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -22,7 +22,7 @@ export const Info = styled.p`
   align-items: center;
   margin-top: 0;
   margin-bottom: 8px;
-  color: ${props => props.theme.colors.primaryText};
+  color: ${props => props.theme.colors.text};
   font-size: 16px;
   line-height: 24px;
   font-weight: 24px;
@@ -42,7 +42,7 @@ export const Info = styled.p`
 `;
 
 const setBgColor = props => {
-  console.log(props.theme);
+  //   console.log(props.theme);
   switch (props.eventType) {
     case 'free':
       return props.theme.colors.green;
@@ -51,7 +51,7 @@ const setBgColor = props => {
     case 'vip':
       return props.theme.colors.red;
     default:
-      return props.theme.colors.white;
+      return props.theme.colors.accent;
   }
 };
 

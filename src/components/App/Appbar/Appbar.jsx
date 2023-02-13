@@ -11,6 +11,7 @@ export const Appbar = () => {
       px={4}
       py={3}
       bg="primary"
+      borderRadius="normal"
     >
       <Logo />
       <div>UserMenu</div>

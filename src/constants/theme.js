@@ -10,7 +10,7 @@ export const theme = Object.freeze({
     red: '#f44336',
     blue: '#2196f3',
   },
-  space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
+  space: [0, 4, 8, 16, 32, 64, 128, 256],
   fonts: {
     body: 'system-ui, sans-serif',
     heading: 'system-ui, sans-serif',
